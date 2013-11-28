@@ -5,11 +5,11 @@ order: 490
 ---
 
 <a name="download-public-resource"></a>
-### 公有资源下载
+### 公开资源下载
 
-公有资源下载非常简单，以HTTP GET方式访问资源URL即可。资源URL的构成如下：
+公开资源下载非常简单，以HTTP GET方式访问资源URL即可。资源URL的构成如下：
 
-```
+```公开
 http://<domain>/<key>
 ```
 
@@ -32,7 +32,7 @@ http://i.example.com/sunflower.jpg
 
 当用户将空间设置成私有后，所有对空间内资源的访问都必须获得授权。
 
-私有资源下载也是通过以HTTP GET方式访问一个特定URL完成。私有资源URL与公有资源URL相比只是增加了两个参数`e`和`token`，分别表示过期时间和下载凭证。一个完整的私有资源URL如下所示：
+私有资源下载也是通过以HTTP GET方式访问一个特定URL完成。私有资源URL与公开资源URL相比只是增加了两个参数`e`和`token`，分别表示过期时间和下载凭证。一个完整的私有资源URL如下所示：
 
 ```
 http://<domain>/<key>?e=<deadline>&token=<downloadToken>
@@ -49,7 +49,7 @@ http://<domain>/<key>?e=<deadline>&token=<downloadToken>
 <a name="anti-leech"></a>
 ### 防盗链
 
-下载还有一种常见的场景，即公有资源的防盗链，比如禁止特定来源域名的访问，禁止非浏览器发起的访问等。
+下载还有一种常见的场景，即公开资源的防盗链，比如禁止特定来源域名的访问，禁止非浏览器发起的访问等。
 
 我们可以通过HTTP协议支持的Referer机制（参见HTTP Referer）来进行相应的来源识别和管理。
 

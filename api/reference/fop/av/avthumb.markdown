@@ -252,7 +252,7 @@ HLS 必须使用友好风格的 URL，可以使用命令行工具 `qboxrsctl` �
 
 已知文件上传到七牛后，下载方式如下:
 
-公有资源
+公开资源
 
     [GET] http://<Domain>/<Key>
 
@@ -263,7 +263,7 @@ HLS 必须使用友好风格的 URL，可以使用命令行工具 `qboxrsctl` �
 
 上述示例设置完之后就可以用以下 URL 来访问 HLS 资源：
 
-    // 公有资源
+    // 公开资源
     [GET] http://<Domain>/<Key>.m3u8_audio
     [GET] http://<Domain>/<Key>.m3u8_video
 
