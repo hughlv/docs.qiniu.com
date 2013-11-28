@@ -40,13 +40,13 @@ GET http://imgs.qiniu.com/data/imgs/2011/1/1/img001.jpg
 使用者可以在上传资源时为其指定一个方便管理的标识，比如通过设计好的前缀来达到类似于文件目录的分类和层次效果。比如对于一个网站的资源，我们可以命名如下的资源列表：
 
 ```
-/index.html
-/features/index.html
-/features/feature1.html
-/features/feature2.html
-/imgs/features/feature1.png
-/imgs/features/feature2.png
-/about.html
+index.html
+features/index.html
+features/feature1.html
+features/feature2.html
+imgs/features/feature1.png
+imgs/features/feature2.png
+about.html
 ```
 
 假设这些资源都位于某个绑定了域名`example.com`的公开空间中，则用户可以通过组合这样的URL访问这些资源：
